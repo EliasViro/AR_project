@@ -16,7 +16,7 @@ public class TapToPlaceScript : MonoBehaviour
     
     void Awake()
     {
-        ar_RayCastManager.GetComponent<ARRaycastManager>();
+        ar_RayCastManager = GetComponent<ARRaycastManager>();
 
 
     }
@@ -46,11 +46,12 @@ public class TapToPlaceScript : MonoBehaviour
 
             if (referenceToPlacedObject == null)
             {
-                referenceToPlacedObject = Instantiate(placeableObject, hitPose.position, hitPose.rotation);
+                referenceToPlacedObject = Instantiate(placeableObject, hitPose.position + new Vector3(0, 0, 0), hitPose.rotation);
             }
             else
             {
-                referenceToPlacedObject.transform.position = hitPose.position;
+                referenceToPlacedObject.transform.position = Vector3.MoveTowards(referenceToPlacedObject.transform.position, hitPose.position, 3 * Time.deltaTime);
+                //referenceToPlacedObject.transform.position = hitPose.position;
             }
         }
         else

@@ -44,31 +44,51 @@ extern void ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mF756D3C1F7925A69
 extern void ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6 (void);
 // 0x00000010 System.Void ARFeatheredPlaneMeshVisualizer::.cctor()
 extern void ARFeatheredPlaneMeshVisualizer__cctor_m56285A000EE27A1631BE9C5BCDA5C376E5D133C3 (void);
-// 0x00000011 System.Void CycleMat::CycleMaterial()
+// 0x00000011 System.Void BallCollision::Awake()
+extern void BallCollision_Awake_mF15166082A1731C0B894F1A2DECD452F05DE457E (void);
+// 0x00000012 System.Void BallCollision::OnCollisionEnter(UnityEngine.Collision)
+extern void BallCollision_OnCollisionEnter_m9F0B51E7E5D4ED22E9CECB4A730359C3A9C0E8C7 (void);
+// 0x00000013 System.Void BallCollision::.ctor()
+extern void BallCollision__ctor_mA47ECC7DACEC0C508893637E831F24F370910241 (void);
+// 0x00000014 System.Void CycleMat::CycleMaterial()
 extern void CycleMat_CycleMaterial_m10B3B0588E681FCB52F60812E427F6E3621D81D5 (void);
-// 0x00000012 System.Void CycleMat::.ctor()
+// 0x00000015 System.Collections.IEnumerator CycleMat::Cycle()
+extern void CycleMat_Cycle_m5921BA5B2F7CF69EB908E962449EA3BEF23B1453 (void);
+// 0x00000016 System.Void CycleMat::.ctor()
 extern void CycleMat__ctor_mB4C26C5B6017F40BA339B5333E5326CC5744111C (void);
-// 0x00000013 System.Void PlaceTrackedImages::Awake()
+// 0x00000017 System.Void CycleMat/<Cycle>d__7::.ctor(System.Int32)
+extern void U3CCycleU3Ed__7__ctor_m6E2A9F50FD6EB50DA4D90F29853BE99E1C12C87C (void);
+// 0x00000018 System.Void CycleMat/<Cycle>d__7::System.IDisposable.Dispose()
+extern void U3CCycleU3Ed__7_System_IDisposable_Dispose_m24BCB3566D835A53812BD38253CA82123E8037A1 (void);
+// 0x00000019 System.Boolean CycleMat/<Cycle>d__7::MoveNext()
+extern void U3CCycleU3Ed__7_MoveNext_mD15484932AF3D7636182C76D92E84B350715A359 (void);
+// 0x0000001A System.Object CycleMat/<Cycle>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CCycleU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCDF86120307623A9B1BA6A8B206549A0DD886040 (void);
+// 0x0000001B System.Void CycleMat/<Cycle>d__7::System.Collections.IEnumerator.Reset()
+extern void U3CCycleU3Ed__7_System_Collections_IEnumerator_Reset_mD39E7A2F454C1EE46533321F39A13B849C51BA78 (void);
+// 0x0000001C System.Object CycleMat/<Cycle>d__7::System.Collections.IEnumerator.get_Current()
+extern void U3CCycleU3Ed__7_System_Collections_IEnumerator_get_Current_mB9F9195E8ADDBFC1CA127FA1446E86251055DBD4 (void);
+// 0x0000001D System.Void PlaceTrackedImages::Awake()
 extern void PlaceTrackedImages_Awake_m875A81CA90E727B87965D5FA603AE8AFCE931A78 (void);
-// 0x00000014 System.Void PlaceTrackedImages::OnEnable()
+// 0x0000001E System.Void PlaceTrackedImages::OnEnable()
 extern void PlaceTrackedImages_OnEnable_mA30F29043B9F5A6995F2CBA8D1340C8F42667EE4 (void);
-// 0x00000015 System.Void PlaceTrackedImages::OnDisable()
+// 0x0000001F System.Void PlaceTrackedImages::OnDisable()
 extern void PlaceTrackedImages_OnDisable_m401542722AB2DC781D193CFD7E2E8F8873C8AEF6 (void);
-// 0x00000016 System.Void PlaceTrackedImages::OnTrackedImagesChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
+// 0x00000020 System.Void PlaceTrackedImages::OnTrackedImagesChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
 extern void PlaceTrackedImages_OnTrackedImagesChanged_m9B9BAD9C115836AB3E18F38AA6B21EF6D951D463 (void);
-// 0x00000017 System.Void PlaceTrackedImages::.ctor()
+// 0x00000021 System.Void PlaceTrackedImages::.ctor()
 extern void PlaceTrackedImages__ctor_m6ED9F36190AAA71939672E2EA701CDB2FE277260 (void);
-// 0x00000018 System.Void TapToPlaceScript::Awake()
+// 0x00000022 System.Void TapToPlaceScript::Awake()
 extern void TapToPlaceScript_Awake_m45433AC549DA56540AAFB8547F9F8FE9C542F99D (void);
-// 0x00000019 System.Boolean TapToPlaceScript::TryTouchPos(UnityEngine.Vector2&)
+// 0x00000023 System.Boolean TapToPlaceScript::TryTouchPos(UnityEngine.Vector2&)
 extern void TapToPlaceScript_TryTouchPos_mF748F2E38CA04451F1BE46F22442DBF4C4BA6D18 (void);
-// 0x0000001A System.Void TapToPlaceScript::Update()
+// 0x00000024 System.Void TapToPlaceScript::Update()
 extern void TapToPlaceScript_Update_mCF9C5BDF59E55A9806391A7D55F34E150C1E8B1C (void);
-// 0x0000001B System.Void TapToPlaceScript::.ctor()
+// 0x00000025 System.Void TapToPlaceScript::.ctor()
 extern void TapToPlaceScript__ctor_mEE0BF8E8EE09E12B4BB9B386DA26C4DA1A772684 (void);
-// 0x0000001C System.Void TapToPlaceScript::.cctor()
+// 0x00000026 System.Void TapToPlaceScript::.cctor()
 extern void TapToPlaceScript__cctor_m98422EB33EE133C321EA37950B5480363ED834B1 (void);
-static Il2CppMethodPointer s_methodPointers[28] = 
+static Il2CppMethodPointer s_methodPointers[38] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -86,8 +106,18 @@ static Il2CppMethodPointer s_methodPointers[28] =
 	ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mF756D3C1F7925A69CD8C7C8CCE56209AB321FEF5,
 	ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6,
 	ARFeatheredPlaneMeshVisualizer__cctor_m56285A000EE27A1631BE9C5BCDA5C376E5D133C3,
+	BallCollision_Awake_mF15166082A1731C0B894F1A2DECD452F05DE457E,
+	BallCollision_OnCollisionEnter_m9F0B51E7E5D4ED22E9CECB4A730359C3A9C0E8C7,
+	BallCollision__ctor_mA47ECC7DACEC0C508893637E831F24F370910241,
 	CycleMat_CycleMaterial_m10B3B0588E681FCB52F60812E427F6E3621D81D5,
+	CycleMat_Cycle_m5921BA5B2F7CF69EB908E962449EA3BEF23B1453,
 	CycleMat__ctor_mB4C26C5B6017F40BA339B5333E5326CC5744111C,
+	U3CCycleU3Ed__7__ctor_m6E2A9F50FD6EB50DA4D90F29853BE99E1C12C87C,
+	U3CCycleU3Ed__7_System_IDisposable_Dispose_m24BCB3566D835A53812BD38253CA82123E8037A1,
+	U3CCycleU3Ed__7_MoveNext_mD15484932AF3D7636182C76D92E84B350715A359,
+	U3CCycleU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCDF86120307623A9B1BA6A8B206549A0DD886040,
+	U3CCycleU3Ed__7_System_Collections_IEnumerator_Reset_mD39E7A2F454C1EE46533321F39A13B849C51BA78,
+	U3CCycleU3Ed__7_System_Collections_IEnumerator_get_Current_mB9F9195E8ADDBFC1CA127FA1446E86251055DBD4,
 	PlaceTrackedImages_Awake_m875A81CA90E727B87965D5FA603AE8AFCE931A78,
 	PlaceTrackedImages_OnEnable_mA30F29043B9F5A6995F2CBA8D1340C8F42667EE4,
 	PlaceTrackedImages_OnDisable_m401542722AB2DC781D193CFD7E2E8F8873C8AEF6,
@@ -99,42 +129,52 @@ static Il2CppMethodPointer s_methodPointers[28] =
 	TapToPlaceScript__ctor_mEE0BF8E8EE09E12B4BB9B386DA26C4DA1A772684,
 	TapToPlaceScript__cctor_m98422EB33EE133C321EA37950B5480363ED834B1,
 };
-static const int32_t s_InvokerIndices[28] = 
+static const int32_t s_InvokerIndices[38] = 
 {
-	5104,
-	4148,
-	5199,
-	5199,
-	5199,
-	5199,
-	8265,
-	5145,
-	4181,
-	5199,
-	5199,
-	5199,
-	4043,
-	4148,
-	5199,
-	8265,
-	5199,
-	5199,
-	5199,
-	5199,
-	5199,
-	4053,
-	5199,
-	5199,
-	2760,
-	5199,
-	5199,
-	8265,
+	5332,
+	4333,
+	5438,
+	5438,
+	5438,
+	5438,
+	8542,
+	5374,
+	4367,
+	5438,
+	5438,
+	5438,
+	4219,
+	4333,
+	5438,
+	8542,
+	5438,
+	4333,
+	5438,
+	5438,
+	5332,
+	5438,
+	4307,
+	5438,
+	5243,
+	5332,
+	5438,
+	5332,
+	5438,
+	5438,
+	5438,
+	4229,
+	5438,
+	5438,
+	2868,
+	5438,
+	5438,
+	8542,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	28,
+	38,
 	s_methodPointers,
 	0,
 	NULL,

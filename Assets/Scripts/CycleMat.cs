@@ -9,9 +9,20 @@ public class CycleMat : MonoBehaviour
     public Material mat3;
     public GameObject parent;
     private int currentMat = 0;
+    public bool cycling = false;
 
     public void CycleMaterial()
     {
+        if (cycling == false)
+        {
+            StartCoroutine(Cycle());
+        }
+    }
+
+    public IEnumerator Cycle()
+    {
+
+        cycling = true;
         if (currentMat == 0)
         {
             parent.GetComponent<MeshRenderer>().material = mat2;
@@ -27,5 +38,7 @@ public class CycleMat : MonoBehaviour
             parent.GetComponent<MeshRenderer>().material = mat1;
             currentMat = 0;
         }
+        yield return new WaitForSeconds(0.5f);
+        cycling = false;
     }
 }
