@@ -61,7 +61,7 @@
     <Compile Include="Assets\Scripts\PlaceTrackedImages.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\AnchorCreator.cs" />
     <Compile Include="Assets\Scripts\CycleMat.cs" />
-    <Compile Include="Assets\Scripts\BallCollision.cs" />
+    <Compile Include="Assets\Scripts\VictoryFromCollision.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

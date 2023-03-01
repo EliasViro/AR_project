@@ -8,8 +8,13 @@ using UnityEngine.XR.ARSubsystems;
 [RequireComponent(typeof(ARRaycastManager))]
 public class TapToPlaceScript : MonoBehaviour
 {
+    private bool firstPlaced = false;
+    private bool secondPlaced = false;
+    private bool toggle = false;
     public GameObject placeableObject;
+    public GameObject placeableObject2;
     private GameObject referenceToPlacedObject;
+    private GameObject referenceToPlacedObject2;
     private ARRaycastManager ar_RayCastManager;
     private Vector2 touchPos;
     static List<ARRaycastHit> rayCastHits = new List<ARRaycastHit>();
@@ -35,29 +40,68 @@ public class TapToPlaceScript : MonoBehaviour
     
     void Update()
     {
-        if (!TryTouchPos(out Vector2 touchPos))
+        if (!toggle)
         {
-            return;
-        }
-
-        if (ar_RayCastManager.Raycast(touchPos, rayCastHits, TrackableType.PlaneWithinPolygon))
-        {
-            var hitPose = rayCastHits[0].pose;
-
-            if (referenceToPlacedObject == null)
+            if (!TryTouchPos(out Vector2 touchPos))
             {
-                referenceToPlacedObject = Instantiate(placeableObject, hitPose.position + new Vector3(0, 0, 0), hitPose.rotation);
+                return;
+            }
+
+            if (ar_RayCastManager.Raycast(touchPos, rayCastHits, TrackableType.PlaneWithinPolygon))
+            {
+                var hitPose = rayCastHits[0].pose;
+
+                if (referenceToPlacedObject == null && firstPlaced == false)
+                {
+                    referenceToPlacedObject = Instantiate(placeableObject, hitPose.position + new Vector3(0, 0, 0), hitPose.rotation);
+                    firstPlaced = true;
+                }
+                else
+                {
+                    //referenceToPlacedObject.GetComponent<Rigidbody>().MovePosition(referenceToPlacedObject.transform.position + new Vector3(hitPose.position.x, 0, hitPose.position.z) * Time.deltaTime * 3);
+                    referenceToPlacedObject.transform.position = Vector3.MoveTowards(referenceToPlacedObject.transform.position, hitPose.position, 3 * Time.deltaTime);
+                    //referenceToPlacedObject.transform.position = hitPose.position;
+                }
             }
             else
             {
-                referenceToPlacedObject.transform.position = Vector3.MoveTowards(referenceToPlacedObject.transform.position, hitPose.position, 3 * Time.deltaTime);
-                //referenceToPlacedObject.transform.position = hitPose.position;
+                referenceToPlacedObject.GetComponent<CycleMat>().CycleMaterial();
             }
         }
-        else
+        else if (toggle)
         {
-            referenceToPlacedObject.GetComponent<CycleMat>().CycleMaterial();
+            if (!TryTouchPos(out Vector2 touchPos))
+            {
+                return;
+            }
+
+            if (ar_RayCastManager.Raycast(touchPos, rayCastHits, TrackableType.PlaneWithinPolygon))
+            {
+                var hitPose2 = rayCastHits[0].pose;
+
+                if (referenceToPlacedObject2 == null && secondPlaced == false)
+                {
+                    referenceToPlacedObject2 = Instantiate(placeableObject2, hitPose2.position + new Vector3(0, 0, 0), hitPose2.rotation);
+                    secondPlaced = true;
+                }
+                else
+                {
+                    //referenceToPlacedObject.GetComponent<Rigidbody>().MovePosition(referenceToPlacedObject.transform.position + new Vector3(hitPose.position.x, 0, hitPose.position.z) * Time.deltaTime * 3);
+                    referenceToPlacedObject2.transform.position = Vector3.MoveTowards(referenceToPlacedObject2.transform.position, hitPose2.position, 3 * Time.deltaTime);
+                    //referenceToPlacedObject.transform.position = hitPose.position;
+                }
+            }
+            else
+            {
+                referenceToPlacedObject2.GetComponent<CycleMat>().CycleMaterial();
+            }
         }
 
+    }
+
+
+    public void ToggleObject()
+    {
+        toggle = !toggle;
     }
 }
