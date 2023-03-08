@@ -57,11 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ExampleAssets\Scripts\ARFeatheredPlaneMeshVisualizer.cs" />
+    <Compile Include="Assets\Scripts\VictoryFromCollision.cs" />
     <Compile Include="Assets\Scripts\TapToPlaceScript.cs" />
     <Compile Include="Assets\Scripts\PlaceTrackedImages.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\AnchorCreator.cs" />
     <Compile Include="Assets\Scripts\CycleMat.cs" />
-    <Compile Include="Assets\Scripts\VictoryFromCollision.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
