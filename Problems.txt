@@ -1,0 +1,4 @@
+Ongelmat projektin kanssa:
+Törmäykset eivät toimi colliderien, rigidbodyjen ja törmäysmatriisin oikeista konfiguroinneista huolimatta.
+Muuten sovellus toimii - palikoita voi asettaa tasolle napauttamalla ja liikuttaa pitämällä pohjassa haluttuun sijaintiin. Nappulalla voidaan vaihtaa toisen palikan asettamiseen ja liikuttamiseen.
+Palikoiden väriä voidaan vaihtaa koskettamalla ruudulla kohtaa, jossa ei ole skannattua tasoa.
